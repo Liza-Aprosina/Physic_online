@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style_log.css">
+    <title>Practice</title>
+</head>
+<body> 
+<div class="wrapper">
+    <!--Поле для информации пользователя-->
+    <h2 class="wrapper__title">Заполните форму для регистрацию в школу</h2>
+    <!--Добавьте action-->
+    <form class="form">
+        <div class="user">
+            <ul class="user-info">
+                <li class="user-info__item">
+                    <!--Вставь сюда label для ФИО-->
+                    <label for="name">Ф.И.О</label>
+                    <input type="text" name="name" id="name" placeholder="Введите ваше ФИО">
+                </li>
+                <li class="user-info__item">
+                    <!--Вставь сюда label для почты-->
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Введите ваш e-mail">
+                </li>
+            </ul>
+            <!--Поля для адреса и даты-->
+            <ul class="address-date">
+                <li class="user-info__item">
+                    <!--Вставь сюда label для адреса-->
+                    <label for="number">Город проживания</label>
+                    <input type="text" name="" id="address" placeholder="Ваша школа">
+                </li>
+                <li class="user-info__item">
+                    <!--Вставь сюда label для даты заказа-->
+                    <label for="date">Ваша дата рождения</label>
+                    <input type="date" name="" id="date">
+                </li>
+            </ul>
+        </div>
+        <div class="delivery">
+            <ul class="delivery-info">
+                <h3 class="delivery__title">Выберете предмет</h3>
+                <li class="delivery-info__item">
+                    <!--Вставь сюда label для способа доставки-->
+                    <label for="courier">Математика</label>
+                    <input type="radio" id="courier">
+                </li>
+                <li class="delivery-info__item">
+                    <!--Вставь сюда label для способа доставки-->
+                    <label for="sam">Физика</label>
+                    <input type="radio" id="sam">
+                </li>
+                <li class="delivery-info__item">
+                    <!--Вставь сюда label для способа доставки-->
+                    <label for="mail">Олимпиадное програмирование</label>
+                    <input type="radio" id="mail">
+                </li>
+            </ul>
+            <ul class="delivery-info">
+                <h3 class="delivery__title">Выберете уровень изучения</h3>
+                <li class="delivery-info__item">
+                    <!--Вставь сюда label для доп услуг-->
+                    <label for="dop1">Базовый</label>
+                    <input type="checkbox" name="" id="dop1">
+                </li>
+                <li class="delivery-info__item">
+                    <!--Вставь сюда label для доп услуг-->
+                    <label for="dop2">Углубленный</label>
+                    <input type="checkbox" name="" id="dop2">
+                </li>
+                
+            </ul>
+        </div>
+            <div class="select">
+                <h3 class="select__title">Формат занятий</h3>
+                <select name="" id="">
+                    <option>Онлайн</option>
+                    <option>Офлайн</option>
+                </select>
+                <!--Вставь label для комментария-->
+                <label for="comment">Оставляйте свои вопросы</label>
+                <textarea name="" id="comment" cols="30" rows="10" placeholder="Ваши вопросы"></textarea>
+            </div>
+        <!--Вставьте кнопку-->
+        <a href="index.html">Готово!</a>
+        
+    </form>
+</div>
+</body>
+<footer>
+    <nav class="nav_end">
+        <a href="index.html">Главное</a>
+        <a href="#aboutus">О нас</a>
+        <a href="index2.html">Уроки</a>
+        <a href="index_log.html">Аккаунт</a>
+        <a href="index.html">Contact us</a>
+    </nav>
+    <div class="logo">
+        <a href="index.html"><h1 class="logo_text">Physics Online</h1></a> 
+    </div>
+    <div class="social">
+        <a href="https://web.telegram.org/k/#@elizavetaaprosina"><img src="apps/telegram.png" alt="telegram"></a>
+        <a href=""><img src="apps/inst.png" alt="instagram"></a>
+        <a href="https://web.whatsapp.com/"><img src="apps/whatsapp.png" alt="whatsapp"></a>
+    </div>
+    <p>Web Developer: Aprosina Liza 2023</p>
+</footer>
+</html>
+

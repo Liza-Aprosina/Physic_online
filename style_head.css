@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+body{
+    margin:0;
+    /* background-image:url(pngwing.com.png); */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+header{
+    padding:10px 4%;
+    /*margin:2%;*/
+    color: white;
+    background-color: rgb(26, 18, 95, 0.888);
+    position:fixed;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(162, 161, 193);
+    margin: 0 10px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* .color_s{
+    color:darkgrey;
+    display:flex;
+    width: 40%;
+    align-items: center;
+} */
+.main-nav{
+    color:darkgrey;
+    display:flex;
+    width: 40%;
+    align-items: center;
+
+}
+
+
+@media (min-width: 320px) and (max-width: 700px){
+    h1{
+        width: 30%;
+        font-size: 15px;
+    }
+    .burger-menu{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .burger-menu::before,
+    .burger-menu::after {
+        content: ''; /* пустой контент */
+        background: #fff; /*цвет бургера*/
+        position: absolute; /* позиция для общего блока*/
+        width: 100%; /* ширина*/
+        height: 2px; /* толщина полосок бургера */
+    }
+
+    .burger-menu::before {
+        top: 0; /* расположение верхней линии бургера */
+    }
+
+    .burger-menu span { /*средняя линия в виде span*/
+        background: #fff;
+        position: absolute; 
+        width: 100%;
+        top: 9px;
+        height: 2px; 
+    }
+    .burger-menu::after {
+        bottom: 0; /* расположение нижней линии бургера */
+    }
+    .main-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 50vw;
+        height: 100vh;
+        background-color: grey;
+    }
+    .nav-list {
+        flex-direction: column; 
+        text-align: right;
+    }
+    /* active */
+    .burger-menu.active {
+        z-index: 3;
+        transform: translateX(-40vw);
+    }
+
+    .burger-menu.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger-menu.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+
+    .main-nav.active {
+       transform: translate(0);
+    }
+
+}
